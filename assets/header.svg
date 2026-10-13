@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 460" role="img" aria-labelledby="title desc">
+<title id="title">Sourodeep Kundu — software, intelligence, quantum research</title><desc id="desc">Navy and ivory editorial cover with copper connections between three research and engineering planes.</desc>
+<defs><pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#e4ddd1" stroke-opacity=".07"/></pattern><linearGradient id="plane" x2="1" y2="1"><stop stop-color="#335c6b"/><stop offset="1" stop-color="#173341"/></linearGradient></defs>
+<rect width="1400" height="460" rx="16" fill="#102732"/><rect width="1400" height="460" rx="16" fill="url(#grid)"/>
+<path d="M58 54H1342" stroke="#aa8964" stroke-opacity=".55"/><text x="60" y="39" fill="#c9b79b" font-family="monospace" font-size="13" letter-spacing="3">S / K — RESEARCH &amp; ENGINEERING</text><text x="1340" y="39" text-anchor="end" fill="#c9b79b" font-family="monospace" font-size="13" letter-spacing="2">BUILD · QUESTION · VERIFY</text>
+<text x="60" y="163" fill="#f2ecdf" font-family="Georgia,serif" font-size="74" letter-spacing="-3">Sourodeep</text><text x="60" y="246" fill="#f2ecdf" font-family="Georgia,serif" font-size="91" letter-spacing="-3">Kundu.</text>
+<text x="64" y="292" fill="#a9c5cc" font-family="Arial,sans-serif" font-size="18">Software that works. Research you can inspect.</text>
+<g transform="translate(820 98)" fill="url(#plane)" stroke="#8da8ae" stroke-opacity=".65"><path d="M0 65 180 0 360 65 180 130Z"/><path d="M0 145 180 80 360 145 180 210Z"/><path d="M0 225 180 160 360 225 180 290Z"/></g>
+<g fill="none" stroke="#c39a67" stroke-width="2"><path d="M838 169 933 199 1117 130"/><path d="M877 250 1005 288 1184 220"/><path d="M850 330 957 355 1138 289"/><path d="M933 199V310M1117 130V240" stroke-dasharray="4 8"/></g>
+<g fill="#dcc4a0"><circle cx="838" cy="169" r="5"/><circle cx="933" cy="199" r="6"/><circle cx="1117" cy="130" r="5"/><circle cx="1005" cy="288" r="6"/><circle cx="957" cy="355" r="5"/><circle cx="1138" cy="289" r="5"/></g>
+<g fill="#d2e2e0" font-family="monospace" font-size="13"><text x="1190" y="172">SYSTEMS</text><text x="1190" y="252">INTELLIGENCE</text><text x="1190" y="332">RESEARCH</text></g>
+<path d="M60 367H1340" stroke="#aa8964" stroke-opacity=".5"/><text x="62" y="410" fill="#c2cfd0" font-family="Arial,sans-serif" font-size="15" letter-spacing="1">SOFTWARE &amp; ANDROID / AGENTIC AI &amp; LLMOPS / CLINICAL ML / QUANTUM SYSTEMS</text></svg>
