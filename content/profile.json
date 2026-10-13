@@ -1,0 +1,139 @@
+{
+  "name": "Sourodeep Kundu",
+  "username": "sourodeepkundu2025-hub",
+  "updated": "2026-10-13",
+  "headline": "Software engineering · Agentic AI & LLMOps · Quantum & clinical ML",
+  "intro": "I build software and study learning systems where the hard questions are about evidence, resources and reliability. My work connects Android and healthcare engineering, retrieval and agent orchestration, and hybrid quantum research.",
+  "education": [
+    "M.Tech. Computer Science Engineering (Core), VIT Vellore · 2025–2027 · ongoing",
+    "B.Tech. Computer Science Engineering, KIIT · 2021–2025"
+  ],
+  "current": "SDE Apprentice — AI, Healthcare & Android, Philips R&D / AM&D · May 2026–present",
+  "links": {
+    "email": "mailto:sourodeepkundu9@gmail.com",
+    "linkedin": "https://www.linkedin.com/in/sourodeep-kundu-460b69270/",
+    "scholar": "https://scholar.google.com/citations?user=n7Fe3fsAAAAJ&hl=en",
+    "researchgate": "https://www.researchgate.net/profile/Sourodeep-Kundu"
+  },
+  "tracks": [
+    {
+      "title": "Software & dependable systems",
+      "detail": "Android, Bluetooth, Java/native interfaces, lifecycle and recovery design; full-stack APIs and CI/CD.",
+      "tools": "Python · Java · TypeScript · SQL · Android · FastAPI · React"
+    },
+    {
+      "title": "Agentic AI & LLMOps",
+      "detail": "Hybrid retrieval, citation grounding, model routing, streaming, MCP integrations and checkpointed workflows.",
+      "tools": "LangGraph · CrewAI · MCP · Ollama · RRF / FTS5"
+    },
+    {
+      "title": "ML & clinical research",
+      "detail": "Multimodal and federated models, patient-disjoint evaluation, ablations, calibration and uncertainty.",
+      "tools": "PyTorch · TensorFlow · scikit-learn · OpenCV"
+    },
+    {
+      "title": "Quantum information & systems",
+      "detail": "Circuit mapping, QKD, tensor networks, QUBO/QAOA and resource-aware quantum/classical studies.",
+      "tools": "Qiskit · PennyLane · SeQUeNCe · D-Wave Ocean"
+    }
+  ],
+  "newProjects": [
+    {
+      "name": "Circuit Route Lab",
+      "repo": "circuit-route-lab",
+      "question": "How does connectivity change a circuit?",
+      "detail": "Interactive mesh routing, explicit logical-to-physical mappings and exact ideal three-qubit teleportation.",
+      "status": "New educational reference implementation"
+    },
+    {
+      "name": "Evidence Gate Lab",
+      "repo": "evidence-gate-lab",
+      "question": "What evidence supports an answer?",
+      "detail": "An offline retrieval instrument with evidence budgets, verified quotations, permission gates and abstention.",
+      "status": "New synthetic-data reference implementation"
+    }
+  ],
+  "existingProjects": [
+    {
+      "name": "Digital Art Commission",
+      "repo": "digital-art-commission",
+      "detail": "Full-stack case-study application for commission records and business-rule validation."
+    },
+    {
+      "name": "AI Resume Screening System",
+      "repo": "AI-Resume-Screening-System",
+      "detail": "A screening prototype with a web interface, Python integration and documented output formats."
+    },
+    {
+      "name": "Ticket Reservation System",
+      "repo": "ticket-reservation-system",
+      "detail": "A Java application repository; the original project remains available for inspection."
+    }
+  ],
+  "research": [
+    {
+      "name": "QVoC",
+      "detail": "Selective hybrid inference with patient-disjoint evaluation and classical/neural early-exit controls; IBM circuit studies have separate scope.",
+      "status": "Research manuscript"
+    },
+    {
+      "name": "HQFL-QNet",
+      "detail": "Compressed-feature federated learning and QUBO selection with heterogeneous-client controls.",
+      "status": "Research manuscript"
+    },
+    {
+      "name": "DEQUINT",
+      "detail": "Entanglement, teleportation and multicore wireless interconnect simulation.",
+      "status": "Research manuscript / simulation"
+    },
+    {
+      "name": "QML-AURA / AURA-Q",
+      "detail": "Resource allocation and feasible processor selection using QUBO/QAOA, fairness constraints and classical fallback.",
+      "status": "Simulation research"
+    }
+  ],
+  "publications": [
+    {
+      "title": "Enhanced Quantum Circuit Layout Optimization: A 2D Nearest Neighbour Approach Leveraging K-Means Clustering and A* Swapping",
+      "venue": "Springer · COMSYS 2024 proceedings · 2026",
+      "doi": "10.1007/978-981-95-0497-8_39"
+    },
+    {
+      "title": "QEA-FAD: Quantum Enhanced Autoencoders for Anomaly Detection in Finance and Healthcare",
+      "venue": "IEEE · NETCRYPT 2025",
+      "doi": "10.1109/NETCRYPT65877.2025.11102801"
+    },
+    {
+      "title": "A 2D Transformation Technique for Nearest Neighbor Realization of Quantum Circuits",
+      "venue": "Springer · VDAT 2023 · online 2024",
+      "doi": "10.1007/978-981-97-5269-0_23"
+    },
+    {
+      "title": "QEFMLA-FIDO: Quantum Evolution Formulation for ML Advancement: Fidelity-Improved Data Optimization in Quantum-Classical Systems",
+      "venue": "IEEE · AESPC 2024",
+      "doi": "10.1109/AESPC63931.2024.10871986"
+    },
+    {
+      "title": "QLSTM4FM: Quantum Assisted Long Short-Term Memory Framework for Financial Market Trend Forecasting",
+      "venue": "IEEE · IC-SIT 2024",
+      "doi": "10.1109/IC-SIT63503.2024.10862667"
+    },
+    {
+      "title": "An Improved Circuit Transformation Technique for Nearest Neighbor Implementation of Quantum Circuits",
+      "venue": "IEEE · VDAT 2024",
+      "doi": "10.1109/VDAT63601.2024.10705747"
+    },
+    {
+      "title": "A 2D-Based Synthesis Strategy for Nearest Neighbor Transformation of Quantum Circuits",
+      "venue": "Springer · COMSYS 2023 · 2024",
+      "doi": "10.1007/978-981-97-2611-0_40"
+    },
+    {
+      "title": "Mapping of Nearest Neighbor-Based Quantum Circuits into 2D",
+      "venue": "CRC Press · Big Data Computing",
+      "doi": "10.1201/9781032634050-13"
+    }
+  ],
+  "ongoing": "Investigating distillation and quantization of open-source LLMs with Ollama/vLLM.",
+  "sourceNote": "Curated from the user-supplied common CV, master handoff and correction records through 12 October 2026. Public code releases are tracked separately from professional summaries, manuscripts and proposals."
+}

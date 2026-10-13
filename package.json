@@ -1,0 +1,9 @@
+{
+  "name": "sourodeepkundu-github-profile",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "render": "node scripts/render-profile.mjs",
+    "check": "node scripts/render-profile.mjs --check"
+  }
+}
