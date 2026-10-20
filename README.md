@@ -1,61 +1,50 @@
-<!-- Generated from content/profile.json by scripts/render-profile.mjs. -->
-<picture><img src="assets/header.svg" alt="Sourodeep Kundu — software, intelligence and quantum research" width="100%"></picture>
+<!-- Generated from content/profile.json and scripts/render-profile.mjs. -->
+# Hey, I'm Sourodeep 👋
 
-<p align="center"><a href="https://www.linkedin.com/in/sourodeep-kundu-460b69270/">LinkedIn</a> · <a href="https://scholar.google.com/citations?user=n7Fe3fsAAAAJ&hl=en">Google Scholar</a> · <a href="https://www.researchgate.net/profile/Sourodeep-Kundu">ResearchGate</a> · <a href="mailto:sourodeepkundu9@gmail.com">Email</a> · <a href="CAREER_RECORD.md">Research & career overview</a></p>
+Usually somewhere between a paper, a profiler and a stubborn failing test.
 
-### Hello, I'm Sourodeep.
+I build software and study AI systems. I'm especially interested in what happens **after the demo works**: a tool times out, memory fills up, evidence goes stale, or an evaluator rewards the wrong thing.
 
-I build software and study learning systems where the hard questions are about evidence, resources and reliability. My work connects Android and healthcare engineering, retrieval and agent orchestration, and hybrid quantum research.
+[LinkedIn](https://www.linkedin.com/in/sourodeep-kundu-460b69270/) · [Google Scholar](https://scholar.google.com/citations?user=n7Fe3fsAAAAJ&hl=en) · [Email](mailto:sourodeepkundu9@gmail.com) · [Research & career record](CAREER_RECORD.md)
 
-**SDE Apprentice — AI, Healthcare & Android, Philips R&D / AM&D · May 2026–present**<br>
-M.Tech. Computer Science Engineering (Core), VIT Vellore · 2025–2027 · ongoing<br>
-B.Tech. Computer Science Engineering, KIIT · 2021–2025
+---
 
-I like the point where an ambitious idea meets an engineering constraint: a circuit with limited connectivity, a model with a call budget, a retrieval system that needs to justify its answer, or a device workflow that must recover clearly.
+### What I'm building toward
 
-### Explore the work
+A six-month, two-hours-a-day research practice in **reliable agents, LLM evaluation and efficient inference**. Reading carefully, implementing the mechanism, and keeping the experiments that *don't* work as well as those that do.
 
-| Project | Engineering question | What you can inspect |
+- **Building now:** an agent-reliability harness with controlled tool faults, explicit budgets and strong retry baselines.
+- **Next:** a small-model Colab/Kaggle pilot, then judge-bias and temporal-memory experiments.
+- **Writing as I go:** [24 project milestones](research/PROJECTS_24.md), a [150-paper reading library](research/PAPER_LIBRARY.md), and [technical notes](research/FOUNDATIONS_TO_FRONTIER.md).
+
+The library is a reading plan, not a claim of 150 completed reviews. [See the programme and current evidence](research/README.md).
+
+### Things you can actually inspect
+
+| Work | The question behind it | Open it |
 | --- | --- | --- |
-| **[Circuit Route Lab](https://github.com/sourodeepkundu2025-hub/circuit-route-lab)** | How does connectivity change a circuit? | Interactive mesh routing, explicit logical-to-physical mappings and exact ideal three-qubit teleportation. [Live demo](https://sourodeepkundu2025-hub.github.io/circuit-route-lab/) · [Run instructions](https://github.com/sourodeepkundu2025-hub/circuit-route-lab#run) · [Tests](https://github.com/sourodeepkundu2025-hub/circuit-route-lab/tree/main/test) |
-| **[Evidence Gate Lab](https://github.com/sourodeepkundu2025-hub/evidence-gate-lab)** | What evidence supports an answer? | An offline retrieval instrument with evidence budgets, verified quotations, permission gates and abstention. [Live demo](https://sourodeepkundu2025-hub.github.io/evidence-gate-lab/) · [Run instructions](https://github.com/sourodeepkundu2025-hub/evidence-gate-lab#run) · [Tests](https://github.com/sourodeepkundu2025-hub/evidence-gate-lab/tree/main/test) |
+| **Agent Reliability Lab** | Does checkpoint recovery beat an ordinary, state-preserving retry? The first synthetic comparison says **no**. | [Code & experiment record](https://github.com/sourodeepkundu2025-hub/agent-reliability-lab) |
+| **Evidence Gate Lab** | Can a system show its sources, respect a word budget and abstain? | [Code](https://github.com/sourodeepkundu2025-hub/evidence-gate-lab) · [Try it](https://sourodeepkundu2025-hub.github.io/evidence-gate-lab/) |
+| **Digital Art Commission** | How do records, APIs and business rules fit together? | [Repository](https://github.com/sourodeepkundu2025-hub/digital-art-commission) |
 
-These are new public reference implementations. The original research and larger platforms have their own release requirements; see the [project roadmap](ROADMAP.md).
+The new reliability project is research scaffolding on synthetic tasks—not a measured LLM improvement. The larger research ideas need real model runs, stronger comparisons and independent review.
 
-### Where my work connects
+### What I work with
 
-| Area | Practice | Tools |
-| --- | --- | --- |
-| **Software & dependable systems** | Android, Bluetooth, Java/native interfaces, lifecycle and recovery design; full-stack APIs and CI/CD. | Python · Java · TypeScript · SQL · Android · FastAPI · React |
-| **Agentic AI & LLMOps** | Hybrid retrieval, citation grounding, model routing, streaming, MCP integrations and checkpointed workflows. | LangGraph · CrewAI · MCP · Ollama · RRF / FTS5 |
-| **ML & clinical research** | Multimodal and federated models, patient-disjoint evaluation, ablations, calibration and uncertainty. | PyTorch · TensorFlow · scikit-learn · OpenCV |
-| **Quantum information & systems** | Circuit mapping, QKD, tensor networks, QUBO/QAOA and resource-aware quantum/classical studies. | Qiskit · PennyLane · SeQUeNCe · D-Wave Ocean |
+<picture><source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=python,pytorch,tensorflow,cpp,java,docker,git,linux&amp;theme=dark&amp;perline=8"><img src="https://skillicons.dev/icons?i=python,pytorch,tensorflow,cpp,java,docker,git,linux&amp;theme=light&amp;perline=8" alt="Python, PyTorch, TensorFlow, C++, Java, Docker, Git and Linux" height="48"></picture>
 
-### Research threads
+**AI & ML:** PyTorch, model evaluation, retrieval, adaptation and experiment design.<br>
+**Systems:** Python, Java/Android, TypeScript, APIs, CI/CD and observable recovery.<br>
+**Current study:** agent failure analysis, judge reliability, post-training, KV caches and resource-aware inference. Free Colab/Kaggle for model experiments; no oversized training-run claims.
 
-- **QVoC** — Selective hybrid inference with patient-disjoint evaluation and classical/neural early-exit controls; IBM circuit studies have separate scope. *Research manuscript.*
-- **HQFL-QNet** — Compressed-feature federated learning and QUBO selection with heterogeneous-client controls. *Research manuscript.*
-- **DEQUINT** — Entanglement, teleportation and multicore wireless interconnect simulation. *Research manuscript / simulation.*
-- **QML-AURA / AURA-Q** — Resource allocation and feasible processor selection using QUBO/QAOA, fairness constraints and classical fallback. *Simulation research.*
+### A little context
 
-My research experience includes circuit synthesis at IIEST Shibpur, multicore quantum-interconnect simulation at IIT Guwahati, tensor networks at NIT Silchar, and generative QML at IISER Bhopal.
+M.Tech. Computer Science Engineering (Core), VIT Vellore · 2025–2027 · ongoing. My professional context is SDE Apprentice — AI, Healthcare & Android, Philips R&D / AM&D · May 2026–present. Public work here uses owned or appropriately licensed material, not employer code or private datasets.
 
-**Currently exploring:** Investigating distillation and quantization of open-source LLMs with Ollama/vLLM.
+Earlier work spans software engineering, clinical ML and quantum research. It stays in the [career record](CAREER_RECORD.md); **AI/LLM systems are the active focus here**. There is also an [interactive circuit lab](https://sourodeepkundu2025-hub.github.io/circuit-route-lab/) for the earlier work.
 
-### Papers and public records
+### If you're working on a similar question
 
-Selected publications include [QLSTM4FM](https://doi.org/10.1109/IC-SIT63503.2024.10862667), [QEA-FAD](https://doi.org/10.1109/NETCRYPT65877.2025.11102801), and [nearest-neighbor circuit transformation](https://doi.org/10.1109/VDAT63601.2024.10705747). See the [publication register](CAREER_RECORD.md#publications) for the broader record.
+I'd like to compare notes on agent reliability, evaluation and efficient small-model systems. A useful failure case or a strong baseline is always welcome. [Say hello](mailto:sourodeepkundu9@gmail.com).
 
-Model studies, physical circuit experiments and simulation results have different scopes. Each released research repository will carry its own data, methods, baselines and limitations.
-
-### More repositories
-
-- [Digital Art Commission](https://github.com/sourodeepkundu2025-hub/digital-art-commission) — Full-stack case-study application for commission records and business-rule validation.
-- [AI Resume Screening System](https://github.com/sourodeepkundu2025-hub/AI-Resume-Screening-System) — A screening prototype with a web interface, Python integration and documented output formats.
-- [Ticket Reservation System](https://github.com/sourodeepkundu2025-hub/ticket-reservation-system) — A Java application repository; the original project remains available for inspection.
-
-### Let's build something worth inspecting.
-
-I'm interested in research collaboration and engineering work across software systems, AI/LLMs, clinical ML and quantum information. [Contact me](mailto:sourodeepkundu9@gmail.com) or explore the repositories above.
-
-<sub>Profile record updated 2026-10-13. New reference implementations include code provenance and reproducible checks.</sub>
+<sub>Learning in public · experiments over headlines · updated 2026-10-20</sub>

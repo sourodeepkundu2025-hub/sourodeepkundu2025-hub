@@ -4,6 +4,6 @@
   "type": "module",
   "scripts": {
     "render": "node scripts/render-profile.mjs",
-    "check": "node scripts/render-profile.mjs --check"
+    "check": "node scripts/render-profile.mjs --check && node scripts/check-research.mjs"
   }
 }
