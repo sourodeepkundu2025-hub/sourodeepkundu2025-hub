@@ -135,5 +135,30 @@
     }
   ],
   "ongoing": "Investigating distillation and quantization of open-source LLMs with Ollama/vLLM.",
-  "sourceNote": "Curated from the user-supplied common CV, master handoff and correction records through 12 October 2026. Public code releases are tracked separately from professional summaries, manuscripts and proposals."
+  "sourceNote": "Curated from the user-supplied common CV, master handoff and correction records through 12 October 2026. Public code releases are tracked separately from professional summaries, manuscripts and proposals.",
+  "showcase": {
+    "tagline": "From models to working systems.",
+    "focus": "Agentic AI · Machine learning · Dependable software",
+    "voice": "I like the point where a model becomes a system: when its data changes, its tools fail, its memory fills up, and someone still needs an answer they can inspect.",
+    "selectedPublicationDois": ["10.1109/NETCRYPT65877.2025.11102801", "10.1109/AESPC63931.2024.10871986", "10.1109/IC-SIT63503.2024.10862667", "10.1007/978-981-95-0497-8_39"],
+    "experience": [
+      {"where":"Philips R&D / AM&D","when":"May 2026–present","role":"SDE Apprentice — AI, Healthcare & Android","work":"Android/Bluetooth/service recovery and AI/document/retrieval tooling; public summaries describe transferable engineering, not employer source or product ownership."},
+      {"where":"C-DAC Chennai","when":"Sep 2025–May 2026","role":"Research internship","work":"Quantum/cloud/edge scheduling and resource-selection research; simulation and feasibility constraints, not live multi-QPU deployment."},
+      {"where":"Recruit CRM","when":"Feb–Jul 2025","role":"CS Associate","work":"API workflows, onboarding automation, chatbots and customer-support engineering."},
+      {"where":"IIT Bombay · LOQM","when":"Nov 2024–Feb 2025","role":"Research internship account","work":"Programmable photonics and waveguide research; optics-informed neural learning was a proposed direction, not a built photonic processor."},
+      {"where":"IIT Guwahati · MARS Lab","when":"May–Jul 2024","role":"Summer Research Intern","work":"SeQUeNCe-based multicore quantum-interconnect modelling, qubit management, entanglement and teleportation simulation."},
+      {"where":"NIT Silchar · S.N. Bose programme","when":"Jun–Jul 2024","role":"Summer research intern","work":"Tensor-network structures and hybrid QML study using Qiskit/PennyLane; the programme is not an appointment at S.N. Bose National Centre."},
+      {"where":"IISER Bhopal","when":"2024","role":"QML research internship","work":"Generative quantum models, Qiskit and error-correction study; year-only date retained from the current career record."},
+      {"where":"IIT Patna","when":"Dec 2023–Jan 2024","role":"SERB-supported project associate account","work":"Quantum-neuromorphic computing and QKD/secure-communication protocol study."},
+      {"where":"IIEST Shibpur","when":"May–Jun 2023","role":"Research internship","work":"C++/Python circuit synthesis, qubit ordering, SWAP reduction and look-ahead mapping in simulation."}
+    ],
+    "capabilities": [
+      {"name":"ML and model evaluation","mechanism":"Representation learning, recurrent models, anomaly detection; split design, controls, ablations and uncertainty.","evidence":"Published ML research and the manuscript summaries","link":"PUBLICATIONS.md","status":"Published work + manuscripts; no new model benchmark claimed"},
+      {"name":"Agent runtimes and recovery","mechanism":"Strict actions, idempotency, typed state transitions, fault injection and budgeted recovery.","evidence":"Agent Reliability Lab: source, tests, configs and raw traces","link":"https://github.com/sourodeepkundu2025-hub/agent-reliability-lab","status":"Implemented synthetic reference; hosted model pilot unexecuted"},
+      {"name":"Retrieval and evidence","mechanism":"Lexical ranking, whole-passage budgets, quotation provenance and abstention.","evidence":"Evidence Gate Lab: browser demo, CLI and shared core","link":"https://github.com/sourodeepkundu2025-hub/evidence-gate-lab","status":"Implemented deterministic reference; not semantic RAG or an LLM"},
+      {"name":"Dependable software","mechanism":"Android/service lifecycle, Bluetooth integration, API workflows and observable recovery.","evidence":"Professional context and owned public application repositories","link":"CAREER_RECORD.md","status":"Career summary; employer implementations remain private"},
+      {"name":"Architecture and constrained computation","mechanism":"Connectivity, mapping, resource accounting and explicit logical/physical state.","evidence":"Circuit Route Lab and published circuit-transformation work","link":"https://github.com/sourodeepkundu2025-hub/circuit-route-lab","status":"Educational baseline + publications; no optimality/hardware claim"},
+      {"name":"Efficient LLM systems","mechanism":"KV caches, attention IO, quantization, adaptation and compute-aware routing.","evidence":"Current research questions and experiment programme","link":"research/RESEARCH_QUESTIONS.md","status":"Active study/planned experiments; CUDA or serving gains not yet measured here"}
+    ]
+  }
 }

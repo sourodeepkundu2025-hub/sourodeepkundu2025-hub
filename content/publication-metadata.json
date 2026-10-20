@@ -1,0 +1,162 @@
+{
+  "source": "Crossref public works API",
+  "publications": [
+    {
+      "doi": "10.1007/978-981-95-0497-8_39",
+      "title": "Enhanced Quantum Circuit Layout Optimization: A 2D Nearest Neighbour Approach Leveraging K-Means Clustering and A* Swapping",
+      "authors": [
+        "Subham Kumar",
+        "Sourodeep Kundu",
+        "Hafizur Rahaman",
+        "Anirban Bhattacharjee"
+      ],
+      "publisher": "Springer Nature Singapore",
+      "type": "book-chapter",
+      "published": [
+        2026
+      ],
+      "source": "https://api.crossref.org/works/10.1007%2F978-981-95-0497-8_39",
+      "checked_at": "2026-10-20T15:09:40.028Z",
+      "verification": "Bibliographic identity only; not a methods, results or contribution-allocation audit."
+    },
+    {
+      "doi": "10.1109/NETCRYPT65877.2025.11102801",
+      "title": "QEA-FAD: Quantum Enhanced Autoencoders for Anomaly Detection in Finance and Healthcare",
+      "authors": [
+        "Sourodeep Kundu",
+        "Deepti Mishra",
+        "Nachiketa Tarasia",
+        "Rakesh Kumar Lenka",
+        "Rabindra K Barik"
+      ],
+      "publisher": "IEEE",
+      "type": "proceedings-article",
+      "published": [
+        2025,
+        5,
+        29
+      ],
+      "source": "https://api.crossref.org/works/10.1109%2FNETCRYPT65877.2025.11102801",
+      "checked_at": "2026-10-20T15:09:40.325Z",
+      "verification": "Bibliographic identity only; not a methods, results or contribution-allocation audit."
+    },
+    {
+      "doi": "10.1007/978-981-97-5269-0_23",
+      "title": "A 2D Transformation Technique for Nearest Neighbor Realization of Quantum Circuits",
+      "authors": [
+        "Subham Kumar",
+        "Sourodeep Kundu",
+        "Hafizur Rahaman",
+        "Anirban Bhattacharjee"
+      ],
+      "publisher": "Springer Nature Singapore",
+      "type": "book-chapter",
+      "published": [
+        2024,
+        10,
+        19
+      ],
+      "source": "https://api.crossref.org/works/10.1007%2F978-981-97-5269-0_23",
+      "checked_at": "2026-10-20T15:09:40.631Z",
+      "verification": "Bibliographic identity only; not a methods, results or contribution-allocation audit."
+    },
+    {
+      "doi": "10.1109/AESPC63931.2024.10871986",
+      "title": "QEFMLA-FIDO: Quantum Evolution Formulation for ML Advancement: Fidelity-Improved Data Optimization in Quantum-Classical Systems",
+      "authors": [
+        "Sourodeep Kundu",
+        "Deepti Mishra",
+        "Nachiketa Tarasia",
+        "Rabindra Kumar Barik"
+      ],
+      "publisher": "IEEE",
+      "type": "proceedings-article",
+      "published": [
+        2024,
+        11,
+        29
+      ],
+      "source": "https://api.crossref.org/works/10.1109%2FAESPC63931.2024.10871986",
+      "checked_at": "2026-10-20T15:09:40.914Z",
+      "verification": "Bibliographic identity only; not a methods, results or contribution-allocation audit."
+    },
+    {
+      "doi": "10.1109/IC-SIT63503.2024.10862667",
+      "title": "QLSTM4FM: Quantum Assisted Long Short-Term Memory Framework for Financial Market Trend Forecasting",
+      "authors": [
+        "Sourodeep Kundu",
+        "Nachiketa Tarasia",
+        "Rabindra Kumar Barik"
+      ],
+      "publisher": "IEEE",
+      "type": "proceedings-article",
+      "published": [
+        2024,
+        11,
+        21
+      ],
+      "source": "https://api.crossref.org/works/10.1109%2FIC-SIT63503.2024.10862667",
+      "checked_at": "2026-10-20T15:09:41.182Z",
+      "verification": "Bibliographic identity only; not a methods, results or contribution-allocation audit."
+    },
+    {
+      "doi": "10.1109/VDAT63601.2024.10705747",
+      "title": "An Improved Circuit Transformation Technique for Nearest Neighbor Implementation of Quantum Circuits",
+      "authors": [
+        "Sourodeep Kundu",
+        "Subham Kumar",
+        "Laxmidhar Biswal",
+        "Chandan Bandyopadhyay",
+        "Anirban Bhattacharjee",
+        "Hafizur Rahaman"
+      ],
+      "publisher": "IEEE",
+      "type": "proceedings-article",
+      "published": [
+        2024,
+        9,
+        1
+      ],
+      "source": "https://api.crossref.org/works/10.1109%2FVDAT63601.2024.10705747",
+      "checked_at": "2026-10-20T15:09:41.475Z",
+      "verification": "Bibliographic identity only; not a methods, results or contribution-allocation audit."
+    },
+    {
+      "doi": "10.1007/978-981-97-2611-0_40",
+      "title": "A 2D-Based Synthesis Strategy for Nearest Neighbor Transformation of Quantum Circuits",
+      "authors": [
+        "Sourodeep Kundu",
+        "Shubham Kumar",
+        "Hafizur Rahaman",
+        "Anirban Bhattacharjee"
+      ],
+      "publisher": "Springer Nature Singapore",
+      "type": "book-chapter",
+      "published": [
+        2024
+      ],
+      "source": "https://api.crossref.org/works/10.1007%2F978-981-97-2611-0_40",
+      "checked_at": "2026-10-20T15:09:41.764Z",
+      "verification": "Bibliographic identity only; not a methods, results or contribution-allocation audit."
+    },
+    {
+      "doi": "10.1201/9781032634050-13",
+      "title": "Mapping of Nearest Neighbor-Based Quantum Circuits into 2D",
+      "authors": [
+        "Sourodeep Kundu",
+        "Anjan Bandyopadhyay",
+        "Anirban Bhattacharjee"
+      ],
+      "publisher": "CRC Press",
+      "type": "book-chapter",
+      "published": [
+        2023,
+        11,
+        30
+      ],
+      "source": "https://api.crossref.org/works/10.1201%2F9781032634050-13",
+      "checked_at": "2026-10-20T15:09:42.037Z",
+      "verification": "Bibliographic identity only; not a methods, results or contribution-allocation audit."
+    }
+  ]
+}

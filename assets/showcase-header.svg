@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="300" viewBox="0 0 1100 300" role="img" aria-labelledby="title description"><title id="title">From models to working systems</title><desc id="description">Original editorial identity artwork. Three independent areas: machine learning, agent systems and dependable software. Not a system architecture or experimental result.</desc><style>text{font-family:Arial,Helvetica,sans-serif} .mono{font-family:monospace}</style>
+<rect width="1100" height="300" rx="18" fill="#112b34"/>
+<path d="M0 266H1100M0 267V300H1100V267" fill="#183b44" stroke="#36525a"/>
+<text x="38" y="48" fill="#9fc7b8" font-size="18" letter-spacing="3">SOURODEEP KUNDU / RESEARCH + ENGINEERING</text>
+<text x="38" y="112" fill="#f4f0e6" font-size="54" font-weight="700">From models</text><text x="38" y="175" fill="#f4f0e6" font-size="54" font-weight="700">to working systems.</text>
+<text x="38" y="224" fill="#b9cbd0" font-size="21">AI systems. Careful experiments. Software that holds up.</text>
+<g transform="translate(760 45)"><rect width="286" height="55" rx="8" fill="#1d444c" stroke="#517276"/><text x="22" y="35" fill="#f4f0e6" font-size="23">01 / Machine learning</text>
+<rect y="70" width="286" height="55" rx="8" fill="#1d444c" stroke="#517276"/><text x="22" y="105" fill="#a8d8bf" font-size="23">02 / Agent systems</text>
+<rect y="140" width="286" height="55" rx="8" fill="#1d444c" stroke="#517276"/><text x="22" y="175" fill="#edba91" font-size="23">03 / Dependable code</text></g>
+<text x="38" y="289" fill="#b9cbd0" font-size="15" letter-spacing="2">PUBLISHED WORK + RUNNABLE LABS + INSPECTABLE EVIDENCE</text></svg>
