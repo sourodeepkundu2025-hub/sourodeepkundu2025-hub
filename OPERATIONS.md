@@ -1,38 +1,71 @@
-# Maintain this GitHub profile from any machine
+# Maintain this showcase from any machine
 
-This public repository has the same name as the GitHub account. Its root README is the account profile, not a separate portfolio website.
+The root README is the GitHub account landing page. It is not the paused portfolio website and needs no Pages deployment. A reviewed merge updates the profile; the project demos have their own repositories and deployments.
 
-## Edit the source of truth
+## What to edit
 
-Requirements: Git, Node.js 22+ and your own authorized GitHub login. No dependency installation or API key is needed for profile generation.
+| Source | Owns |
+| --- | --- |
+| `content/profile.json` | Introduction, current context, selected experience, capabilities, project links and canonical publication titles |
+| `content/publication-metadata.json` | Saved Crossref title/author/publisher/date evidence; not results or credential verification |
+| `content/agent-result.json` | Pinned public synthetic experiment values and raw-source fingerprint |
+| `scripts/render-profile.mjs` | Page structure, career overview and bibliography generation |
+| `scripts/render-assets.mjs` | Editable original SVG artwork and result/pipeline figures |
+| `scripts/render-visual-sources.mjs` | Figure source ledger and asset byte identities |
+| `research/` | Existing programme, questions and staged reading library |
+
+README, CAREER_RECORD, PUBLICATIONS, VISUAL_SOURCES and three SVGs are generated. Do not change them alone and leave the source stale. PNG previews are exact copies of owned public demo captures; see [visual sources](VISUAL_SOURCES.md).
+
+## Route A — any computer with Git and Node.js 22+
+
+No npm dependency installation, personal path or API key is needed for normal rendering/testing.
 
 ```sh
 git clone https://github.com/sourodeepkundu2025-hub/sourodeepkundu2025-hub.git
 cd sourodeepkundu2025-hub
 git switch -c codex/profile-update
-```
-
-Edit `content/profile.json`, not the generated README or career record. The renderer also holds the shared page structure. After editing:
-
-```sh
+# Edit the source data or generator.
 npm run render
 npm run check
 git diff --check
-git add content/profile.json scripts/render-profile.mjs README.md CAREER_RECORD.md
-git commit -m "Update profile and career record"
+git add content scripts test README.md CAREER_RECORD.md PUBLICATIONS.md VISUAL_SOURCES.md assets
+git commit -m "Update research showcase"
 git push -u origin codex/profile-update
 ```
 
-Open a Pull Request and review the Profile consistency CI check and the rendered README. Merge the PR only when the check passes and the wording is correct. The GitHub profile updates automatically after merge; this repository does not need a Pages deployment.
+Open a PR. Inspect the exact-head Profile consistency check and rendered README before merging. The repository forces LF text endings so generated files and source hashes remain portable; PNG files are binary.
 
-You can also edit directly through GitHub's web editor and propose a branch/PR. If changing JSON in the web editor, regenerate the derived files in a checkout or coding-agent session before merging; CI detects stale derived files.
+## Route B — browser-only source editing
 
-## Project demos
+1. In GitHub, create a feature branch named `codex/your-change` from current `main`.
+2. Edit `content/profile.json` or the relevant source on that branch. Commit the edit to the feature branch, not main.
+3. Open **Actions → Refresh generated profile on a feature branch → Run workflow**. Select that same `codex/` branch. This manual workflow regenerates and tests the files, then commits only the allowlisted generated outputs back to that feature branch. It refuses non-`codex/` refs and never merges a PR.
+4. Open a PR after generation. If a PR already exists, inspect the new head and run **Profile consistency → Run workflow** on that feature branch if new checks did not appear; approve workflow runs if GitHub requests it.
+5. Review the page, data, visual provenance and green checks at the final head. Merge only after that review.
 
-The Circuit Route Lab and Evidence Gate Lab are separate repositories. Their PRs run correctness tests. After an approved merge to `main`, their GitHub Actions workflows build a selected static site and publish it to GitHub Pages. Review the deployed behavior as well as green CI.
+GitHub restricts recursive workflow triggering for commits made with its built-in token. A successful refresh is not proof that a separate check ran on the new commit; use the manual consistency run when necessary. [Official trigger behavior](https://docs.github.com/en/actions/how-tos/write-workflows/choose-when-workflows-run/trigger-a-workflow).
+
+The refresh workflow uses the repository's short-lived Actions token, not your stored PAT. Only this manually started workflow has `contents: write`; ordinary push/PR checks remain read-only. No new secret, MCP, scheduled job or auto-merge is required. A branch rule that disallows bot pushes should be respected: use Route A rather than weakening protection.
+
+## Optional public-source refreshes
+
+```sh
+npm run audit:publications
+npm run audit:lab
+npm run render
+npm run check
+```
+
+These commands make explicit public HTTPS requests; normal CI does not. The publication refresh refuses title or author mismatches. Review new data instead of assuming metadata validates the science. The lab snapshot pins a known commit and only accepts the synthetic/zero-model-call evidence class. A real model experiment requires a new reviewed snapshot/protocol, not relabelling this one.
+
+On managed networks, use the approved system trust store or CA configuration. For Node versions supporting it, `node --use-system-ca scripts/sync-publications.mjs` can use system-installed certificates. Never disable TLS verification to make a metadata refresh pass.
+
+## Changing the actual projects
+
+This repository showcases work; it does not contain the complete source of the three independent labs. Open the target lab repository for functional changes. Circuit Route and Evidence Gate deploy static demos through their own PR/check/Pages workflows. Agent Reliability has Python CI; its hosted GPU notebook still requires a reviewed commit and your authenticated Colab/Kaggle session. No model execution follows from editing the profile.
 
 ## Working with a coding agent
 
-Share this repository or a PR URL and the requested change. `AGENTS.md`, the data file, generator and workflows provide the portable working context. Source CV/handoff packages and employer implementations are not in this public repository; supply approved additional source separately when a new factual or project-code update requires it.
+Share this repository or a PR URL plus the requested outcome. `AGENTS.md`, the data, generators, tests, source ledger and workflows make the profile self-contained. Supply approved new source separately for new facts or original research code; raw CV packages, private proofs, employer data/code and credentials are not in this repository.
 
-Never commit access tokens, private proofs, employer code or patient/customer data. Authenticate each machine through its credential manager. Multiple accounts may be selected per command/session without putting credentials into the source tree.
+Preserve manuscript/simulation/prototype status; do not turn a selection into an attended role or a framework name into a performance claim. Use a PR to roll back a change. Never reset broad directories or overwrite historical experiment evidence. Authenticate each machine with its credential manager; no PAT belongs in source or browser-editable content.

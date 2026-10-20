@@ -9,6 +9,22 @@ Sourodeep Kundu · Software engineering · Agentic AI & LLMOps · Quantum & clin
 
 SDE Apprentice — AI, Healthcare & Android, Philips R&D / AM&D · May 2026–present. Professional summaries describe transferable work; employer source and internal artifacts are not published in this profile repository.
 
+## Selected experience
+
+| Period | Context | Work focus |
+| --- | --- | --- |
+| May 2026–present | **Philips R&D / AM&D** — SDE Apprentice — AI, Healthcare & Android | Android/Bluetooth/service recovery and AI/document/retrieval tooling; public summaries describe transferable engineering, not employer source or product ownership. |
+| Sep 2025–May 2026 | **C-DAC Chennai** — Research internship | Quantum/cloud/edge scheduling and resource-selection research; simulation and feasibility constraints, not live multi-QPU deployment. |
+| Feb–Jul 2025 | **Recruit CRM** — CS Associate | API workflows, onboarding automation, chatbots and customer-support engineering. |
+| Nov 2024–Feb 2025 | **IIT Bombay · LOQM** — Research internship account | Programmable photonics and waveguide research; optics-informed neural learning was a proposed direction, not a built photonic processor. |
+| May–Jul 2024 | **IIT Guwahati · MARS Lab** — Summer Research Intern | SeQUeNCe-based multicore quantum-interconnect modelling, qubit management, entanglement and teleportation simulation. |
+| Jun–Jul 2024 | **NIT Silchar · S.N. Bose programme** — Summer research intern | Tensor-network structures and hybrid QML study using Qiskit/PennyLane; the programme is not an appointment at S.N. Bose National Centre. |
+| 2024 | **IISER Bhopal** — QML research internship | Generative quantum models, Qiskit and error-correction study; year-only date retained from the current career record. |
+| Dec 2023–Jan 2024 | **IIT Patna** — SERB-supported project associate account | Quantum-neuromorphic computing and QKD/secure-communication protocol study. |
+| May–Jun 2023 | **IIEST Shibpur** — Research internship | C++/Python circuit synthesis, qubit ordering, SWAP reduction and look-ahead mapping in simulation. |
+
+Dates and roles are curated from the supplied career record, not newly authenticated credential records. Preserve year-only dates where exact intervals are unresolved. Selection-only or withdrawn opportunities are not held-role entries. Public labs are not institutional endorsements or the original internship implementations.
+
 ## Research
 
 ### QVoC
@@ -47,6 +63,8 @@ Status: Simulation research.
 - **A 2D-Based Synthesis Strategy for Nearest Neighbor Transformation of Quantum Circuits**. Springer · COMSYS 2023 · 2024. [DOI](https://doi.org/10.1007/978-981-97-2611-0_40).
 - **Mapping of Nearest Neighbor-Based Quantum Circuits into 2D**. CRC Press · Big Data Computing. [DOI](https://doi.org/10.1201/9781032634050-13).
 
+[Complete bibliography, registry dates and co-authors](PUBLICATIONS.md). These eight publication identities are separate from manuscripts and preprints.
+
 ## Ongoing work
 
 Investigating distillation and quantization of open-source LLMs with Ollama/vLLM.
@@ -55,4 +73,4 @@ Investigating distillation and quantization of open-source LLMs with Ollama/vLLM
 
 Curated from the user-supplied common CV, master handoff and correction records through 12 October 2026. Public code releases are tracked separately from professional summaries, manuscripts and proposals.
 
-This public summary is generated from `content/profile.json`. The research programme is a separate forward-looking plan, not new credentials, results or affiliations.
+Generated from `content/profile.json`. Bibliographic identity was refreshed separately against Crossref; exact contribution allocations, scientific results and credential authenticity are not established by metadata. Private career packages, proofs, patents and employer implementations are not published here. The research programme is forward-looking work, not new credentials or completed experiments.

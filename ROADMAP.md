@@ -1,6 +1,6 @@
 # Public project roadmap
 
-The public profile is the entrance to the work, not a replacement for its evidence. Two runnable reference labs start the showcase. The larger projects will be released from their original user-supplied code, with appropriate collaborator/source boundaries.
+The public profile is the entrance to the work, not a replacement for its evidence. Three public reference labs now demonstrate bounded recovery, evidence handling and circuit mapping. The larger research projects will be released from original user-supplied code, with appropriate collaborator/source boundaries. Active non-quantum AI priorities and the six-month programme are in [research/README.md](research/README.md); the broad career-release routes below are not simultaneous build commitments.
 
 | Track | Release direction | Acceptance evidence |
 | --- | --- | --- |

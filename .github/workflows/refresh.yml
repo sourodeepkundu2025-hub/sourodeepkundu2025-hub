@@ -1,0 +1,38 @@
+name: Refresh generated profile on a feature branch
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    env:
+      SOURCE_BRANCH: ${{ github.ref_name }}
+      SOURCE_REF_TYPE: ${{ github.ref_type }}
+    steps:
+      - name: Refuse default-branch writes
+        shell: bash
+        run: |
+          if [ "$SOURCE_REF_TYPE" != "branch" ]; then echo "Select a feature branch, not a tag."; exit 1; fi
+          case "$SOURCE_BRANCH" in
+            codex/*) ;;
+            *) echo "Select a codex/ feature branch. This workflow never writes main/master."; exit 1 ;;
+          esac
+      - uses: actions/checkout@v5
+        with:
+          ref: ${{ github.ref_name }}
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 22
+      - run: npm run render
+      - run: npm run check
+      - name: Commit generated files only
+        shell: bash
+        run: |
+          git add -- README.md CAREER_RECORD.md PUBLICATIONS.md VISUAL_SOURCES.md assets/showcase-header.svg assets/agent-results.svg assets/evidence-pipeline.svg
+          if git diff --cached --quiet; then echo "Generated files are current."; exit 0; fi
+          git diff --cached --check
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "chore: refresh generated profile and source-grounded visuals"
+          git push origin "HEAD:$SOURCE_BRANCH"

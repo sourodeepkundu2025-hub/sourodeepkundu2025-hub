@@ -1,0 +1,94 @@
+{
+  "source": "https://raw.githubusercontent.com/sourodeepkundu2025-hub/agent-reliability-lab/d919938e44ffdde2f26ddeb13b0c40da297dff3d/artifacts/amendment-content-disjoint-audit/report.json",
+  "commit": "d919938e44ffdde2f26ddeb13b0c40da297dff3d",
+  "file": "artifacts/amendment-content-disjoint-audit/report.json",
+  "sha256": "67dd2abb8761613b539c99307661f7dc38a9df5e58d5dc83f7e9c22be69e3edb",
+  "evidence_class": "Actual saved synthetic replay; handwritten controllers, zero model calls.",
+  "config_sha256": "5e17845986106d3e6bccc542a25272106730dcf270d053d8a25dfa70b90cc995",
+  "summary": {
+    "checkpoint-budget": {
+      "abstention": 0.005,
+      "failures": 265,
+      "model_calls": 0,
+      "recovered_failures": 265,
+      "runs": 200,
+      "task_success": 0.995,
+      "tool_calls_mean": 7.18,
+      "unsafe_proposed_actions": 0
+    },
+    "fixed-retry": {
+      "abstention": 0.215,
+      "failures": 305,
+      "model_calls": 0,
+      "recovered_failures": 207,
+      "runs": 200,
+      "task_success": 0.785,
+      "tool_calls_mean": 7.9,
+      "unsafe_proposed_actions": 0
+    },
+    "no-retry": {
+      "abstention": 0.595,
+      "failures": 119,
+      "model_calls": 0,
+      "recovered_failures": 0,
+      "runs": 200,
+      "task_success": 0.405,
+      "tool_calls_mean": 3.515,
+      "unsafe_proposed_actions": 0
+    },
+    "step-retry": {
+      "abstention": 0.005,
+      "failures": 265,
+      "model_calls": 0,
+      "recovered_failures": 265,
+      "runs": 200,
+      "task_success": 0.995,
+      "tool_calls_mean": 7.18,
+      "unsafe_proposed_actions": 0
+    }
+  },
+  "paired_comparisons": [
+    {
+      "baseline": "no-retry",
+      "candidate": "checkpoint-budget",
+      "ci95_percentile": [
+        0.53,
+        0.65
+      ],
+      "interpretation": "conditional synthetic task-family uncertainty; not real-agent evidence",
+      "method": "paired task-cluster bootstrap; average seeds within task; 2000 resamples",
+      "paired_task_seed_runs": 200,
+      "success_delta": 0.59,
+      "task_units": 40
+    },
+    {
+      "baseline": "fixed-retry",
+      "candidate": "checkpoint-budget",
+      "ci95_percentile": [
+        0.155,
+        0.265
+      ],
+      "interpretation": "conditional synthetic task-family uncertainty; not real-agent evidence",
+      "method": "paired task-cluster bootstrap; average seeds within task; 2000 resamples",
+      "paired_task_seed_runs": 200,
+      "success_delta": 0.21000000000000002,
+      "task_units": 40
+    },
+    {
+      "baseline": "step-retry",
+      "candidate": "checkpoint-budget",
+      "ci95_percentile": [
+        0,
+        0
+      ],
+      "interpretation": "conditional synthetic task-family uncertainty; not real-agent evidence",
+      "method": "paired task-cluster bootstrap; average seeds within task; 2000 resamples",
+      "paired_task_seed_runs": 200,
+      "success_delta": 0,
+      "task_units": 40
+    }
+  ],
+  "task_generation": "content-disjoint-v2",
+  "cross_split_unique_content_overlap": 0,
+  "checked_at": "2026-10-20T15:11:45.783Z"
+}
