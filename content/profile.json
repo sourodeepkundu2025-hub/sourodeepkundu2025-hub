@@ -134,7 +134,6 @@
       "doi": "10.1201/9781032634050-13"
     }
   ],
-  "ongoing": "Investigating distillation and quantization of open-source LLMs with Ollama/vLLM.",
   "sourceNote": "Curated from the user-supplied common CV, master handoff and correction records through 12 October 2026. Public code releases are tracked separately from professional summaries, manuscripts and proposals.",
   "showcase": {
     "tagline": "From models to working systems.",
@@ -154,11 +153,10 @@
     ],
     "capabilities": [
       {"name":"ML and model evaluation","mechanism":"Representation learning, recurrent models, anomaly detection; split design, controls, ablations and uncertainty.","evidence":"Published ML research and the manuscript summaries","link":"PUBLICATIONS.md","status":"Published work + manuscripts; no new model benchmark claimed"},
-      {"name":"Agent runtimes and recovery","mechanism":"Strict actions, idempotency, typed state transitions, fault injection and budgeted recovery.","evidence":"Agent Reliability Lab: source, tests, configs and raw traces","link":"https://github.com/sourodeepkundu2025-hub/agent-reliability-lab","status":"Implemented synthetic reference; hosted model pilot unexecuted"},
+      {"name":"Agent runtimes and recovery","mechanism":"Strict actions, idempotency, typed state transitions, fault injection and budgeted recovery.","evidence":"Agent Reliability Lab: source, tests, configs and raw traces","link":"https://github.com/sourodeepkundu2025-hub/agent-reliability-lab","status":"Implemented synthetic reference; not an LLM result"},
       {"name":"Retrieval and evidence","mechanism":"Lexical ranking, whole-passage budgets, quotation provenance and abstention.","evidence":"Evidence Gate Lab: browser demo, CLI and shared core","link":"https://github.com/sourodeepkundu2025-hub/evidence-gate-lab","status":"Implemented deterministic reference; not semantic RAG or an LLM"},
       {"name":"Dependable software","mechanism":"Android/service lifecycle, Bluetooth integration, API workflows and observable recovery.","evidence":"Professional context and owned public application repositories","link":"CAREER_RECORD.md","status":"Career summary; employer implementations remain private"},
-      {"name":"Architecture and constrained computation","mechanism":"Connectivity, mapping, resource accounting and explicit logical/physical state.","evidence":"Circuit Route Lab and published circuit-transformation work","link":"https://github.com/sourodeepkundu2025-hub/circuit-route-lab","status":"Educational baseline + publications; no optimality/hardware claim"},
-      {"name":"Efficient LLM systems","mechanism":"KV caches, attention IO, quantization, adaptation and compute-aware routing.","evidence":"Current research questions and experiment programme","link":"research/RESEARCH_QUESTIONS.md","status":"Active study/planned experiments; CUDA or serving gains not yet measured here"}
+      {"name":"Architecture and constrained computation","mechanism":"Connectivity, mapping, resource accounting and explicit logical/physical state.","evidence":"Circuit Route Lab and published circuit-transformation work","link":"https://github.com/sourodeepkundu2025-hub/circuit-route-lab","status":"Educational baseline + publications; no optimality/hardware claim"}
     ]
   }
 }

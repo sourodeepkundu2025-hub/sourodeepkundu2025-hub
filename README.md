@@ -29,9 +29,7 @@ The lab implements an exactly-once synthetic ledger, strict action/observation c
 
 **Evidence:** the content-disjoint amendment has 40 tasks × five seeds × four controllers. Strong step retry and checkpoint recovery both reach **99.5% success**, with **7.18 mean tool calls** and zero paired advantage. The weaker restart comparison and the subsequent correction are both retained. This is a useful baseline/control finding, **not a novel checkpoint method or an LLM result**.
 
-[Source & run instructions](https://github.com/sourodeepkundu2025-hub/agent-reliability-lab) · [Frozen results](https://github.com/sourodeepkundu2025-hub/agent-reliability-lab/tree/d919938e44ffdde2f26ddeb13b0c40da297dff3d/artifacts/amendment-content-disjoint-audit) · [CI](https://github.com/sourodeepkundu2025-hub/agent-reliability-lab/actions) · [Colab pilot](https://colab.research.google.com/github/sourodeepkundu2025-hub/agent-reliability-lab/blob/main/notebooks/Colab_GPU_Pilot.ipynb)
-
-The separate eight-case Qwen3-0.6B schema pilot is prepared for free Colab/Kaggle; it has **not yet been executed on a hosted GPU** or connected to the multi-step recovery comparison.
+[Source & run instructions](https://github.com/sourodeepkundu2025-hub/agent-reliability-lab) · [Frozen results](https://github.com/sourodeepkundu2025-hub/agent-reliability-lab/tree/d919938e44ffdde2f26ddeb13b0c40da297dff3d/artifacts/amendment-content-disjoint-audit) · [CI](https://github.com/sourodeepkundu2025-hub/agent-reliability-lab/actions)
 
 ### 02 / Evidence Gate Lab
 
@@ -98,18 +96,7 @@ Alongside the published work, these research threads are at manuscript or simula
 | **DEQUINT** | Entanglement, teleportation and multicore wireless interconnect simulation. | Research manuscript / simulation |
 | **QML-AURA / AURA-Q** | Resource allocation and feasible processor selection using QUBO/QAOA, fairness constraints and classical fallback. | Simulation research |
 
-Source-code releases for these threads require the original project artifacts and collaborator/privacy checks. The public labs above are independent reference work, not substitutes for those releases.
-
-**Current AI questions:** recovery after ambiguous tool outcomes; memory that distinguishes current from superseded evidence; and deciding when a visual observation is too stale to use. Each needs to beat a strong simple baseline before a new mechanism is justified.
-
-[Candidate mechanisms, nearest work and falsification tests](research/RESEARCH_QUESTIONS.md) · [Research programme](research/README.md) · [Foundations-to-frontier notes](research/FOUNDATIONS_TO_FRONTIER.md)
-
-<details>
-<summary>Reading and experiment programme</summary>
-
-The six-month programme has [24 sequential milestones](research/PROJECTS_24.md) feeding a few maintained systems. It includes agent evaluation, retrieval/memory, inference, adaptation, verifiable RL and temporal grounding. The [150-paper library](research/PAPER_LIBRARY.md) currently records 34 abstract reads, nine selected-section reads and 107 unread discovery candidates. It is a staged reading list—not 150 completed reviews. Full nearest-method reading, actual model runs and independent replication remain required before research-contribution claims.
-
-</details>
+The public labs above are independent reference work, not the original implementations of these manuscripts. Manuscript and simulation status is retained so existing research is not mistaken for additional published results.
 
 ## Selected experience
 
@@ -145,17 +132,15 @@ This is selected career context, not a claim that the public labs are institutio
 | Area | Mechanisms I work with | Inspectable route / scope |
 | --- | --- | --- |
 | **ML and model evaluation** | Representation learning, recurrent models, anomaly detection; split design, controls, ablations and uncertainty. | [Published ML research and the manuscript summaries](PUBLICATIONS.md). Published work + manuscripts; no new model benchmark claimed. |
-| **Agent runtimes and recovery** | Strict actions, idempotency, typed state transitions, fault injection and budgeted recovery. | [Agent Reliability Lab: source, tests, configs and raw traces](https://github.com/sourodeepkundu2025-hub/agent-reliability-lab). Implemented synthetic reference; hosted model pilot unexecuted. |
+| **Agent runtimes and recovery** | Strict actions, idempotency, typed state transitions, fault injection and budgeted recovery. | [Agent Reliability Lab: source, tests, configs and raw traces](https://github.com/sourodeepkundu2025-hub/agent-reliability-lab). Implemented synthetic reference; not an LLM result. |
 | **Retrieval and evidence** | Lexical ranking, whole-passage budgets, quotation provenance and abstention. | [Evidence Gate Lab: browser demo, CLI and shared core](https://github.com/sourodeepkundu2025-hub/evidence-gate-lab). Implemented deterministic reference; not semantic RAG or an LLM. |
 | **Dependable software** | Android/service lifecycle, Bluetooth integration, API workflows and observable recovery. | [Professional context and owned public application repositories](CAREER_RECORD.md). Career summary; employer implementations remain private. |
 | **Architecture and constrained computation** | Connectivity, mapping, resource accounting and explicit logical/physical state. | [Circuit Route Lab and published circuit-transformation work](https://github.com/sourodeepkundu2025-hub/circuit-route-lab). Educational baseline + publications; no optimality/hardware claim. |
-| **Efficient LLM systems** | KV caches, attention IO, quantization, adaptation and compute-aware routing. | [Current research questions and experiment programme](research/RESEARCH_QUESTIONS.md). Active study/planned experiments; CUDA or serving gains not yet measured here. |
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=python,pytorch,tensorflow,cpp,java,android,docker,git,linux&amp;theme=dark&amp;perline=9"><img src="https://skillicons.dev/icons?i=python,pytorch,tensorflow,cpp,java,android,docker,git,linux&amp;theme=light&amp;perline=9" alt="Python, PyTorch, TensorFlow, C++, Java, Android, Docker, Git and Linux" height="48"></picture>
 
 **Languages / systems:** Python, C++, Java, TypeScript, SQL, Android, APIs and Git-based CI/CD.<br>
-**Models / research:** PyTorch, TensorFlow, scikit-learn, OpenCV, Qiskit, PennyLane and SeQUeNCe.<br>
-**Current study:** LLM evaluation, distillation/quantization, KV caches, attention IO and resource-aware serving. Framework familiarity is not a substitute for a measured result.
+**Models / research:** PyTorch, TensorFlow, scikit-learn, OpenCV, Qiskit, PennyLane and SeQUeNCe. Framework familiarity is not a substitute for a measured result.
 
 ## Compare notes or build together
 

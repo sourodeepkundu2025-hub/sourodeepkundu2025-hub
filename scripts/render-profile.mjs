@@ -44,9 +44,7 @@ The lab implements an exactly-once synthetic ledger, strict action/observation c
 
 **Evidence:** the content-disjoint amendment has 40 tasks × five seeds × four controllers. Strong step retry and checkpoint recovery both reach **${percent(strong.task_success)} success**, with **${strong.tool_calls_mean} mean tool calls** and zero paired advantage. The weaker restart comparison and the subsequent correction are both retained. This is a useful baseline/control finding, **not a novel checkpoint method or an LLM result**.
 
-[Source & run instructions](${repo("agent-reliability-lab")}) · [Frozen results](${repo("agent-reliability-lab")}/tree/${experiment.commit}/artifacts/amendment-content-disjoint-audit) · [CI](${repo("agent-reliability-lab")}/actions) · [Colab pilot](https://colab.research.google.com/github/${d.username}/agent-reliability-lab/blob/main/notebooks/Colab_GPU_Pilot.ipynb)
-
-The separate eight-case Qwen3-0.6B schema pilot is prepared for free Colab/Kaggle; it has **not yet been executed on a hosted GPU** or connected to the multi-step recovery comparison.
+[Source & run instructions](${repo("agent-reliability-lab")}) · [Frozen results](${repo("agent-reliability-lab")}/tree/${experiment.commit}/artifacts/amendment-content-disjoint-audit) · [CI](${repo("agent-reliability-lab")}/actions)
 
 ### 02 / Evidence Gate Lab
 
@@ -99,18 +97,7 @@ Alongside the published work, these research threads are at manuscript or simula
 | --- | --- | --- |
 ${d.research.map(r=>`| **${r.name}** | ${r.detail} | ${r.status} |`).join("\n")}
 
-Source-code releases for these threads require the original project artifacts and collaborator/privacy checks. The public labs above are independent reference work, not substitutes for those releases.
-
-**Current AI questions:** recovery after ambiguous tool outcomes; memory that distinguishes current from superseded evidence; and deciding when a visual observation is too stale to use. Each needs to beat a strong simple baseline before a new mechanism is justified.
-
-[Candidate mechanisms, nearest work and falsification tests](research/RESEARCH_QUESTIONS.md) · [Research programme](research/README.md) · [Foundations-to-frontier notes](research/FOUNDATIONS_TO_FRONTIER.md)
-
-<details>
-<summary>Reading and experiment programme</summary>
-
-The six-month programme has [24 sequential milestones](research/PROJECTS_24.md) feeding a few maintained systems. It includes agent evaluation, retrieval/memory, inference, adaptation, verifiable RL and temporal grounding. The [150-paper library](research/PAPER_LIBRARY.md) currently records 34 abstract reads, nine selected-section reads and 107 unread discovery candidates. It is a staged reading list—not 150 completed reviews. Full nearest-method reading, actual model runs and independent replication remain required before research-contribution claims.
-
-</details>
+The public labs above are independent reference work, not the original implementations of these manuscripts. Manuscript and simulation status is retained so existing research is not mistaken for additional published results.
 
 ## Selected experience
 
@@ -142,8 +129,7 @@ ${d.showcase.capabilities.map(c=>`| **${c.name}** | ${c.mechanism} | [${c.eviden
 <picture><source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=python,pytorch,tensorflow,cpp,java,android,docker,git,linux&amp;theme=dark&amp;perline=9"><img src="https://skillicons.dev/icons?i=python,pytorch,tensorflow,cpp,java,android,docker,git,linux&amp;theme=light&amp;perline=9" alt="Python, PyTorch, TensorFlow, C++, Java, Android, Docker, Git and Linux" height="48"></picture>
 
 **Languages / systems:** Python, C++, Java, TypeScript, SQL, Android, APIs and Git-based CI/CD.<br>
-**Models / research:** PyTorch, TensorFlow, scikit-learn, OpenCV, Qiskit, PennyLane and SeQUeNCe.<br>
-**Current study:** LLM evaluation, distillation/quantization, KV caches, attention IO and resource-aware serving. Framework familiarity is not a substitute for a measured result.
+**Models / research:** PyTorch, TensorFlow, scikit-learn, OpenCV, Qiskit, PennyLane and SeQUeNCe. Framework familiarity is not a substitute for a measured result.
 
 ## Compare notes or build together
 
@@ -181,15 +167,11 @@ ${d.publications.map(p=>`- **${p.title}**. ${p.venue}. [DOI](https://doi.org/${p
 
 [Complete bibliography, registry dates and co-authors](PUBLICATIONS.md). These eight publication identities are separate from manuscripts and preprints.
 
-## Ongoing work
-
-${d.ongoing}
-
 ## Record maintenance
 
 ${d.sourceNote}
 
-Generated from \`content/profile.json\`. Bibliographic identity was refreshed separately against Crossref; exact contribution allocations, scientific results and credential authenticity are not established by metadata. Private career packages, proofs, patents and employer implementations are not published here. The research programme is forward-looking work, not new credentials or completed experiments.
+Generated from \`content/profile.json\`. Bibliographic identity was refreshed separately against Crossref; exact contribution allocations, scientific results and credential authenticity are not established by metadata. Private career packages, proofs, patents and employer implementations are not published here.
 `;
 const publications=`# Publications
 
