@@ -1,59 +1,59 @@
 import {readFile,writeFile} from "node:fs/promises";
-import path from "node:path";import {fileURLToPath} from "node:url";
+import path from "node:path";
+import {fileURLToPath} from "node:url";
 const root=path.dirname(path.dirname(fileURLToPath(import.meta.url)));
 const d=JSON.parse(await readFile(path.join(root,"content/profile.json"),"utf8"));
 const repo=name=>"https://github.com/"+d.username+"/"+name;
-const readme=`<!-- Generated from content/profile.json by scripts/render-profile.mjs. -->
-<picture><img src="assets/header.svg" alt="Sourodeep Kundu — software, intelligence and quantum research" width="100%"></picture>
+const readme=`<!-- Generated from content/profile.json and scripts/render-profile.mjs. -->
+# Hey, I'm Sourodeep 👋
 
-<p align="center"><a href="${d.links.linkedin}">LinkedIn</a> · <a href="${d.links.scholar}">Google Scholar</a> · <a href="${d.links.researchgate}">ResearchGate</a> · <a href="${d.links.email}">Email</a> · <a href="CAREER_RECORD.md">Research & career overview</a></p>
+Usually somewhere between a paper, a profiler and a stubborn failing test.
 
-### Hello, I'm Sourodeep.
+I build software and study AI systems. I'm especially interested in what happens **after the demo works**: a tool times out, memory fills up, evidence goes stale, or an evaluator rewards the wrong thing.
 
-${d.intro}
+[LinkedIn](${d.links.linkedin}) · [Google Scholar](${d.links.scholar}) · [Email](${d.links.email}) · [Research & career record](CAREER_RECORD.md)
 
-**${d.current}**<br>
-${d.education.join("<br>\n")}
+---
 
-I like the point where an ambitious idea meets an engineering constraint: a circuit with limited connectivity, a model with a call budget, a retrieval system that needs to justify its answer, or a device workflow that must recover clearly.
+### What I'm building toward
 
-### Explore the work
+A six-month, two-hours-a-day research practice in **reliable agents, LLM evaluation and efficient inference**. Reading carefully, implementing the mechanism, and keeping the experiments that *don't* work as well as those that do.
 
-| Project | Engineering question | What you can inspect |
+- **Building now:** an agent-reliability harness with controlled tool faults, explicit budgets and strong retry baselines.
+- **Next:** a small-model Colab/Kaggle pilot, then judge-bias and temporal-memory experiments.
+- **Writing as I go:** [24 project milestones](research/PROJECTS_24.md), a [150-paper reading library](research/PAPER_LIBRARY.md), and [technical notes](research/FOUNDATIONS_TO_FRONTIER.md).
+
+The library is a reading plan, not a claim of 150 completed reviews. [See the programme and current evidence](research/README.md).
+
+### Things you can actually inspect
+
+| Work | The question behind it | Open it |
 | --- | --- | --- |
-${d.newProjects.map(p=>`| **[${p.name}](${repo(p.repo)})** | ${p.question} | ${p.detail} [Live demo](https://${d.username}.github.io/${p.repo}/) · [Run instructions](${repo(p.repo)}#run) · [Tests](${repo(p.repo)}/tree/main/test) |`).join("\n")}
+| **Agent Reliability Lab** | Does checkpoint recovery beat an ordinary, state-preserving retry? The first synthetic comparison says **no**. | [Code & experiment record](${repo("agent-reliability-lab")}) |
+| **Evidence Gate Lab** | Can a system show its sources, respect a word budget and abstain? | [Code](${repo("evidence-gate-lab")}) · [Try it](https://${d.username}.github.io/evidence-gate-lab/) |
+| **Digital Art Commission** | How do records, APIs and business rules fit together? | [Repository](${repo("digital-art-commission")}) |
 
-These are new public reference implementations. The original research and larger platforms have their own release requirements; see the [project roadmap](ROADMAP.md).
+The new reliability project is research scaffolding on synthetic tasks—not a measured LLM improvement. The larger research ideas need real model runs, stronger comparisons and independent review.
 
-### Where my work connects
+### What I work with
 
-| Area | Practice | Tools |
-| --- | --- | --- |
-${d.tracks.map(t=>`| **${t.title}** | ${t.detail} | ${t.tools} |`).join("\n")}
+<picture><source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=python,pytorch,tensorflow,cpp,java,docker,git,linux&amp;theme=dark&amp;perline=8"><img src="https://skillicons.dev/icons?i=python,pytorch,tensorflow,cpp,java,docker,git,linux&amp;theme=light&amp;perline=8" alt="Python, PyTorch, TensorFlow, C++, Java, Docker, Git and Linux" height="48"></picture>
 
-### Research threads
+**AI & ML:** PyTorch, model evaluation, retrieval, adaptation and experiment design.<br>
+**Systems:** Python, Java/Android, TypeScript, APIs, CI/CD and observable recovery.<br>
+**Current study:** agent failure analysis, judge reliability, post-training, KV caches and resource-aware inference. Free Colab/Kaggle for model experiments; no oversized training-run claims.
 
-${d.research.map(r=>`- **${r.name}** — ${r.detail} *${r.status}.*`).join("\n")}
+### A little context
 
-My research experience includes circuit synthesis at IIEST Shibpur, multicore quantum-interconnect simulation at IIT Guwahati, tensor networks at NIT Silchar, and generative QML at IISER Bhopal.
+${d.education[0]}. My professional context is ${d.current}. Public work here uses owned or appropriately licensed material, not employer code or private datasets.
 
-**Currently exploring:** ${d.ongoing}
+Earlier work spans software engineering, clinical ML and quantum research. It stays in the [career record](CAREER_RECORD.md); **AI/LLM systems are the active focus here**. There is also an [interactive circuit lab](https://${d.username}.github.io/circuit-route-lab/) for the earlier work.
 
-### Papers and public records
+### If you're working on a similar question
 
-Selected publications include [QLSTM4FM](https://doi.org/10.1109/IC-SIT63503.2024.10862667), [QEA-FAD](https://doi.org/10.1109/NETCRYPT65877.2025.11102801), and [nearest-neighbor circuit transformation](https://doi.org/10.1109/VDAT63601.2024.10705747). See the [publication register](CAREER_RECORD.md#publications) for the broader record.
+I'd like to compare notes on agent reliability, evaluation and efficient small-model systems. A useful failure case or a strong baseline is always welcome. [Say hello](${d.links.email}).
 
-Model studies, physical circuit experiments and simulation results have different scopes. Each released research repository will carry its own data, methods, baselines and limitations.
-
-### More repositories
-
-${d.existingProjects.map(p=>`- [${p.name}](${repo(p.repo)}) — ${p.detail}`).join("\n")}
-
-### Let's build something worth inspecting.
-
-I'm interested in research collaboration and engineering work across software systems, AI/LLMs, clinical ML and quantum information. [Contact me](${d.links.email}) or explore the repositories above.
-
-<sub>Profile record updated ${d.updated}. New reference implementations include code provenance and reproducible checks.</sub>
+<sub>Learning in public · experiments over headlines · updated ${d.updated}</sub>
 `;
 const career=`# Research and career overview
 
@@ -81,11 +81,11 @@ ${d.ongoing}
 
 ${d.sourceNote}
 
-This public summary is generated with the profile from \`content/profile.json\`. It complements the common CV without replacing it. A repository release, a publication and an internship selection are separate records.
+This public summary is generated from \`content/profile.json\`. The research programme is a separate forward-looking plan, not new credentials, results or affiliations.
 `;
-for(const [name,body]of [["README.md",readme],["CAREER_RECORD.md",career]]){
- const dest=path.join(root,name);
- if(process.argv.includes("--check")){if(await readFile(dest,"utf8")!==body)throw new Error(name+" has drifted from profile.json");}
- else await writeFile(dest,body);
+for(const [name,body] of [["README.md",readme],["CAREER_RECORD.md",career]]){
+ const target=path.join(root,name);
+ if(process.argv.includes("--check")){if(await readFile(target,"utf8")!==body)throw new Error(name+" drifted from its generator");}
+ else await writeFile(target,body);
 }
-console.log(process.argv.includes("--check")?"Profile and career record synchronized.":"Rendered profile and career record.");
+console.log(process.argv.includes("--check")?"Profile generation check passed.":"Rendered profile and career record.");

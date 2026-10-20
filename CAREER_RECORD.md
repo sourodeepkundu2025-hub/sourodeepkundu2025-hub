@@ -55,4 +55,4 @@ Investigating distillation and quantization of open-source LLMs with Ollama/vLLM
 
 Curated from the user-supplied common CV, master handoff and correction records through 12 October 2026. Public code releases are tracked separately from professional summaries, manuscripts and proposals.
 
-This public summary is generated with the profile from `content/profile.json`. It complements the common CV without replacing it. A repository release, a publication and an internship selection are separate records.
+This public summary is generated from `content/profile.json`. The research programme is a separate forward-looking plan, not new credentials, results or affiliations.
