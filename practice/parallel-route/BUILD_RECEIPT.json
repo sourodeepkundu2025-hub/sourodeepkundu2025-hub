@@ -1,0 +1,21 @@
+{
+  "date": "2026-10-20",
+  "compiler": "WSL g++ (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
+  "flags": [
+    "-std=c++17",
+    "-O2",
+    "-fopenmp",
+    "-Wall",
+    "-Wextra",
+    "-Wpedantic"
+  ],
+  "compile_exit_code": 0,
+  "compiler_diagnostics": [],
+  "source_sha256": "093324b32d58b90e8ba25f0fa8d57f58ff38fdcd3f0862f7a049b6d4852bd2a8",
+  "binary_sha256": "2a8cdb2666836d2344d335c197cc4255b82c3eb977ffa569da77402afe4b05c6",
+  "binary_bytes": 52008,
+  "executed": false,
+  "tests_run": false,
+  "benchmarks_run": false,
+  "scope": "Personal/practice prototype, source authored and compiled only; runtime verification pending."
+}

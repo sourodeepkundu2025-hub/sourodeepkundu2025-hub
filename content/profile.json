@@ -1,7 +1,7 @@
 {
   "name": "Sourodeep Kundu",
   "username": "sourodeepkundu2025-hub",
-  "updated": "2026-10-13",
+  "updated": "2026-10-20",
   "headline": "Software engineering · Agentic AI & LLMOps · Quantum & clinical ML",
   "intro": "I build software and study learning systems where the hard questions are about evidence, resources and reliability. My work connects Android and healthcare engineering, retrieval and agent orchestration, and hybrid quantum research.",
   "education": [
@@ -13,7 +13,8 @@
     "email": "mailto:sourodeepkundu9@gmail.com",
     "linkedin": "https://www.linkedin.com/in/sourodeep-kundu-460b69270/",
     "scholar": "https://scholar.google.com/citations?user=n7Fe3fsAAAAJ&hl=en",
-    "researchgate": "https://www.researchgate.net/profile/Sourodeep-Kundu"
+    "researchgate": "https://www.researchgate.net/profile/Sourodeep-Kundu",
+    "cv": "https://github.com/sourodeepkundu2025-hub/sourodeepkundu2025-hub/blob/main/assets/Sourodeep_Kundu_CV_2026_Main.pdf"
   },
   "tracks": [
     {
@@ -43,14 +44,61 @@
       "repo": "circuit-route-lab",
       "question": "How does connectivity change a circuit?",
       "detail": "Interactive mesh routing, explicit logical-to-physical mappings and exact ideal three-qubit teleportation.",
-      "status": "New educational reference implementation"
+      "status": "New educational reference implementation",
+      "url": "https://github.com/sourodeepkundu2025-hub/circuit-route-lab",
+      "links": [
+        {
+          "label": "Live demo",
+          "url": "https://sourodeepkundu2025-hub.github.io/circuit-route-lab/"
+        },
+        {
+          "label": "Run instructions",
+          "url": "https://github.com/sourodeepkundu2025-hub/circuit-route-lab#run"
+        },
+        {
+          "label": "Tests",
+          "url": "https://github.com/sourodeepkundu2025-hub/circuit-route-lab/tree/main/test"
+        }
+      ]
     },
     {
       "name": "Evidence Gate Lab",
       "repo": "evidence-gate-lab",
       "question": "What evidence supports an answer?",
       "detail": "An offline retrieval instrument with evidence budgets, verified quotations, permission gates and abstention.",
-      "status": "New synthetic-data reference implementation"
+      "status": "New synthetic-data reference implementation",
+      "url": "https://github.com/sourodeepkundu2025-hub/evidence-gate-lab",
+      "links": [
+        {
+          "label": "Live demo",
+          "url": "https://sourodeepkundu2025-hub.github.io/evidence-gate-lab/"
+        },
+        {
+          "label": "Run instructions",
+          "url": "https://github.com/sourodeepkundu2025-hub/evidence-gate-lab#run"
+        },
+        {
+          "label": "Tests",
+          "url": "https://github.com/sourodeepkundu2025-hub/evidence-gate-lab/tree/main/test"
+        }
+      ]
+    },
+    {
+      "name": "Parallel Circuit Routing",
+      "url": "https://github.com/sourodeepkundu2025-hub/sourodeepkundu2025-hub/tree/main/practice/parallel-route",
+      "question": "How can independent routing candidates be evaluated in parallel?",
+      "detail": "C++17/OpenMP practice prototype with BFS, logical-to-physical mappings, look-ahead scoring and a CSV routing trace. Source compiles; runtime validation and benchmarking are pending.",
+      "status": "Personal practice · in progress",
+      "links": [
+        {
+          "label": "Source & build guide",
+          "url": "https://github.com/sourodeepkundu2025-hub/sourodeepkundu2025-hub/tree/main/practice/parallel-route"
+        },
+        {
+          "label": "OpenMP learning demo",
+          "url": "https://www.youtube.com/watch?v=3gwV6iBF6E0"
+        }
+      ]
     }
   ],
   "existingProjects": [

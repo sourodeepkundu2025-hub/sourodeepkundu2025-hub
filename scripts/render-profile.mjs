@@ -6,7 +6,7 @@ const repo=name=>"https://github.com/"+d.username+"/"+name;
 const readme=`<!-- Generated from content/profile.json by scripts/render-profile.mjs. -->
 <picture><img src="assets/header.svg" alt="Sourodeep Kundu — software, intelligence and quantum research" width="100%"></picture>
 
-<p align="center"><a href="${d.links.linkedin}">LinkedIn</a> · <a href="${d.links.scholar}">Google Scholar</a> · <a href="${d.links.researchgate}">ResearchGate</a> · <a href="${d.links.email}">Email</a> · <a href="CAREER_RECORD.md">Research & career overview</a></p>
+<p align="center"><a href="${d.links.cv}"><strong>CV (PDF)</strong></a> · <a href="${d.links.linkedin}">LinkedIn</a> · <a href="${d.links.scholar}">Google Scholar</a> · <a href="${d.links.researchgate}">ResearchGate</a> · <a href="${d.links.email}">Email</a> · <a href="CAREER_RECORD.md">Research & career overview</a></p>
 
 ### Hello, I'm Sourodeep.
 
@@ -21,9 +21,9 @@ I like the point where an ambitious idea meets an engineering constraint: a circ
 
 | Project | Engineering question | What you can inspect |
 | --- | --- | --- |
-${d.newProjects.map(p=>`| **[${p.name}](${repo(p.repo)})** | ${p.question} | ${p.detail} [Live demo](https://${d.username}.github.io/${p.repo}/) · [Run instructions](${repo(p.repo)}#run) · [Tests](${repo(p.repo)}/tree/main/test) |`).join("\n")}
+${d.newProjects.map(p=>`| **[${p.name}](${p.url})**<br><sub>${p.status}</sub> | ${p.question} | ${p.detail} ${p.links.map(l=>`[${l.label}](${l.url})`).join(" · ")} |`).join("\n")}
 
-These are new public reference implementations. The original research and larger platforms have their own release requirements; see the [project roadmap](ROADMAP.md).
+These projects include educational reference implementations and ongoing personal practice. The original research and larger platforms have their own release requirements; see the [project roadmap](ROADMAP.md).
 
 ### Where my work connects
 
@@ -53,7 +53,7 @@ ${d.existingProjects.map(p=>`- [${p.name}](${repo(p.repo)}) — ${p.detail}`).jo
 
 I'm interested in research collaboration and engineering work across software systems, AI/LLMs, clinical ML and quantum information. [Contact me](${d.links.email}) or explore the repositories above.
 
-<sub>Profile record updated ${d.updated}. New reference implementations include code provenance and reproducible checks.</sub>
+<sub>Profile record updated ${d.updated}. Project documentation records provenance, completed checks and remaining work.</sub>
 `;
 const career=`# Research and career overview
 
