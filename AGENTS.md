@@ -6,4 +6,6 @@ Use `content/profile.json` as the shared public record for the landing page and 
 
 Preserve the distinction between public reference implementations, original research, professional experience, ongoing practice and selections. Do not import raw private career packages, claim quantum advantage from circuit runs, invent project metrics or copy employer code.
 
+Personal schedules, reading queues, candidate mechanisms, recruitment targets and unreleased project plans are private. Do not add a public research roadmap or recover planning documents from history. Showcase released artifacts and measured evidence; preserve honest manuscript/prototype limitations without announcing private future plans.
+
 The paused portfolio is a separate project; this repository manages the GitHub account profile.

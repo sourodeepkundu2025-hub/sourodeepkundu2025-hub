@@ -12,7 +12,6 @@ The root README is the GitHub account landing page. It is not the paused portfol
 | `scripts/render-profile.mjs` | Page structure, career overview and bibliography generation |
 | `scripts/render-assets.mjs` | Editable original SVG artwork and result/pipeline figures |
 | `scripts/render-visual-sources.mjs` | Figure source ledger and asset byte identities |
-| `research/` | Existing programme, questions and staged reading library |
 
 README, CAREER_RECORD, PUBLICATIONS, VISUAL_SOURCES and three SVGs are generated. Do not change them alone and leave the source stale. PNG previews are exact copies of owned public demo captures; see [visual sources](VISUAL_SOURCES.md).
 
@@ -67,5 +66,7 @@ This repository showcases work; it does not contain the complete source of the t
 ## Working with a coding agent
 
 Share this repository or a PR URL plus the requested outcome. `AGENTS.md`, the data, generators, tests, source ledger and workflows make the profile self-contained. Supply approved new source separately for new facts or original research code; raw CV packages, private proofs, employer data/code and credentials are not in this repository.
+
+Keep personal study schedules, reading queues, candidate research mechanisms, recruitment targets and unreleased project plans outside this public repository. Add work to the showcase when an inspectable artifact or result exists and its release is approved. Do not reconstruct or advertise private planning from earlier revisions.
 
 Preserve manuscript/simulation/prototype status; do not turn a selection into an attended role or a framework name into a performance claim. Use a PR to roll back a change. Never reset broad directories or overwrite historical experiment evidence. Authenticate each machine with its credential manager; no PAT belongs in source or browser-editable content.

@@ -1,6 +1,6 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import {readFile,access} from "node:fs/promises";
+import {readFile,access,readdir} from "node:fs/promises";
 const root=new URL("../",import.meta.url);
 const read=async name=>readFile(new URL(name,root),"utf8");
 const data=JSON.parse(await read("content/profile.json"));
@@ -15,12 +15,15 @@ test("eight exact publication identities and selected subset preserve authorship
  for(const p of data.publications){const m=metadata.publications.find(m=>m.doi===p.doi);assert.equal(m.title,p.title);assert.ok(m.authors.includes(data.name));assert.match(m.source,/^https:\/\/api\.crossref\.org\/works\//);}
  for(const doi of data.showcase.selectedPublicationDois)assert.ok(data.publications.some(p=>p.doi===doi));
 });
-test("public showcases expose present evidence before the future programme",()=>{
+test("public showcases expose present evidence without private future plans",async()=>{
  for(const heading of ["Public engineering labs","Selected published research","Research in progress","Selected experience","Capabilities with an evidence trail"])assert.ok(readme.includes("## "+heading));
- assert.ok(readme.indexOf("## Public engineering labs")<readme.indexOf("Research programme"));
- assert.ok(!readme.includes("two-hours-a-day"));
+ for(const file of ["README.md","CAREER_RECORD.md","content/profile.json","scripts/render-profile.mjs"]){
+  assert.doesNotMatch(await read(file),/What I'm building toward|reading (?:and experiment programme|library|plan)|milestones|research\/(?:README|RESEARCH_QUESTIONS|PAPER_LIBRARY)|Current study:/i);
+ }
+ for(const removed of ["ROADMAP.md","scripts/check-research.mjs"])await assert.rejects(access(new URL(removed,root)),{code:"ENOENT"});
+ const planningFiles=await readdir(new URL("research/",root)).catch(error=>{if(error.code==="ENOENT")return [];throw error;});
+ assert.equal(planningFiles.length,0,"Private planning directory must not have public files");
  assert.match(readme,/not a novel checkpoint method or an LLM result/);
- assert.match(readme,/not yet been executed on a hosted GPU/);
 });
 test("experiment chart snapshot preserves the strong-baseline null and class",()=>{
  const a=result.summary["step-retry"],b=result.summary["checkpoint-budget"];

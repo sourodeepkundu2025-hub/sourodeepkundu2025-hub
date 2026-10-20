@@ -65,12 +65,8 @@ Status: Simulation research.
 
 [Complete bibliography, registry dates and co-authors](PUBLICATIONS.md). These eight publication identities are separate from manuscripts and preprints.
 
-## Ongoing work
-
-Investigating distillation and quantization of open-source LLMs with Ollama/vLLM.
-
 ## Record maintenance
 
 Curated from the user-supplied common CV, master handoff and correction records through 12 October 2026. Public code releases are tracked separately from professional summaries, manuscripts and proposals.
 
-Generated from `content/profile.json`. Bibliographic identity was refreshed separately against Crossref; exact contribution allocations, scientific results and credential authenticity are not established by metadata. Private career packages, proofs, patents and employer implementations are not published here. The research programme is forward-looking work, not new credentials or completed experiments.
+Generated from `content/profile.json`. Bibliographic identity was refreshed separately against Crossref; exact contribution allocations, scientific results and credential authenticity are not established by metadata. Private career packages, proofs, patents and employer implementations are not published here.
