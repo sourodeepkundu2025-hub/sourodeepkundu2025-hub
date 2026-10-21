@@ -12,6 +12,7 @@ The root README is the GitHub account landing page. It is not the paused portfol
 | `scripts/render-profile.mjs` | Page structure, career overview and bibliography generation |
 | `scripts/render-assets.mjs` | Editable original SVG artwork and result/pipeline figures |
 | `scripts/render-visual-sources.mjs` | Figure source ledger and asset byte identities |
+| `research/` and `ROADMAP.md` | Supporting research library, notes and plans; deliberately not linked or promoted on the profile homepage |
 
 README, CAREER_RECORD, PUBLICATIONS, VISUAL_SOURCES and three SVGs are generated. Do not change them alone and leave the source stale. PNG previews are exact copies of owned public demo captures; see [visual sources](VISUAL_SOURCES.md).
 
@@ -22,23 +23,23 @@ No npm dependency installation, personal path or API key is needed for normal re
 ```sh
 git clone https://github.com/sourodeepkundu2025-hub/sourodeepkundu2025-hub.git
 cd sourodeepkundu2025-hub
-git switch -c codex/profile-update
+git switch -c sourodeep/profile-update
 # Edit the source data or generator.
 npm run render
 npm run check
 git diff --check
 git add content scripts test README.md CAREER_RECORD.md PUBLICATIONS.md VISUAL_SOURCES.md assets
 git commit -m "Update research showcase"
-git push -u origin codex/profile-update
+git push -u origin sourodeep/profile-update
 ```
 
 Open a PR. Inspect the exact-head Profile consistency check and rendered README before merging. The repository forces LF text endings so generated files and source hashes remain portable; PNG files are binary.
 
 ## Route B — browser-only source editing
 
-1. In GitHub, create a feature branch named `codex/your-change` from current `main`.
+1. In GitHub, create a feature branch named `sourodeep/your-change` from current `main`.
 2. Edit `content/profile.json` or the relevant source on that branch. Commit the edit to the feature branch, not main.
-3. Open **Actions → Refresh generated profile on a feature branch → Run workflow**. Select that same `codex/` branch. This manual workflow regenerates and tests the files, then commits only the allowlisted generated outputs back to that feature branch. It refuses non-`codex/` refs and never merges a PR.
+3. Open **Actions → Refresh generated profile on a feature branch → Run workflow**. Select that same `sourodeep/` branch. This manual workflow regenerates and tests the files, then commits only the allowlisted generated outputs back to that feature branch. It also accepts existing `codex/` branches for continued work, refuses other refs and tags, and never merges a PR.
 4. Open a PR after generation. If a PR already exists, inspect the new head and run **Profile consistency → Run workflow** on that feature branch if new checks did not appear; approve workflow runs if GitHub requests it.
 5. Review the page, data, visual provenance and green checks at the final head. Merge only after that review.
 
@@ -67,6 +68,6 @@ This repository showcases work; it does not contain the complete source of the t
 
 Share this repository or a PR URL plus the requested outcome. `AGENTS.md`, the data, generators, tests, source ledger and workflows make the profile self-contained. Supply approved new source separately for new facts or original research code; raw CV packages, private proofs, employer data/code and credentials are not in this repository.
 
-Keep personal study schedules, reading queues, candidate research mechanisms, recruitment targets and unreleased project plans outside this public repository. Add work to the showcase when an inspectable artifact or result exists and its release is approved. Do not reconstruct or advertise private planning from earlier revisions.
+The existing research material may remain in supporting repository files, but it must not be shown or linked on the root profile README. That includes the study schedule, reading queue and prospective-project discussion. Supporting files in this public repository remain discoverable and are not confidential. Preserve their reading-stage/planned-work labels; add work to the homepage when an inspectable artifact or result exists and its release is approved. Do not import other private workbench or career material under this permission.
 
 Preserve manuscript/simulation/prototype status; do not turn a selection into an attended role or a framework name into a performance claim. Use a PR to roll back a change. Never reset broad directories or overwrite historical experiment evidence. Authenticate each machine with its credential manager; no PAT belongs in source or browser-editable content.
