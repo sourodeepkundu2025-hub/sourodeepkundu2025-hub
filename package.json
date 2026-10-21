@@ -4,7 +4,7 @@
   "type": "module",
   "scripts": {
     "render": "node scripts/render-assets.mjs && node scripts/render-profile.mjs && node scripts/render-visual-sources.mjs",
-    "check": "node scripts/render-assets.mjs --check && node scripts/render-profile.mjs --check && node scripts/render-visual-sources.mjs --check && node --test test/*.test.mjs",
+    "check": "node scripts/render-assets.mjs --check && node scripts/render-profile.mjs --check && node scripts/render-visual-sources.mjs --check && node scripts/check-research.mjs && node --test test/*.test.mjs",
     "audit:publications": "node scripts/sync-publications.mjs",
     "audit:lab": "node scripts/sync-lab-evidence.mjs"
   }

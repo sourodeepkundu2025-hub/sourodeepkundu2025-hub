@@ -1,6 +1,6 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import {readFile,access,readdir} from "node:fs/promises";
+import {readFile,access} from "node:fs/promises";
 const root=new URL("../",import.meta.url);
 const read=async name=>readFile(new URL(name,root),"utf8");
 const data=JSON.parse(await read("content/profile.json"));
@@ -15,14 +15,13 @@ test("eight exact publication identities and selected subset preserve authorship
  for(const p of data.publications){const m=metadata.publications.find(m=>m.doi===p.doi);assert.equal(m.title,p.title);assert.ok(m.authors.includes(data.name));assert.match(m.source,/^https:\/\/api\.crossref\.org\/works\//);}
  for(const doi of data.showcase.selectedPublicationDois)assert.ok(data.publications.some(p=>p.doi===doi));
 });
-test("public showcases expose present evidence without private future plans",async()=>{
+test("homepage showcases present evidence while supporting research stays off the homepage",async()=>{
  for(const heading of ["Public engineering labs","Selected published research","Research in progress","Selected experience","Capabilities with an evidence trail"])assert.ok(readme.includes("## "+heading));
  for(const file of ["README.md","CAREER_RECORD.md","content/profile.json","scripts/render-profile.mjs"]){
   assert.doesNotMatch(await read(file),/What I'm building toward|reading (?:and experiment programme|library|plan)|milestones|research\/(?:README|RESEARCH_QUESTIONS|PAPER_LIBRARY)|Current study:/i);
  }
- for(const removed of ["ROADMAP.md","scripts/check-research.mjs"])await assert.rejects(access(new URL(removed,root)),{code:"ENOENT"});
- const planningFiles=await readdir(new URL("research/",root)).catch(error=>{if(error.code==="ENOENT")return [];throw error;});
- assert.equal(planningFiles.length,0,"Private planning directory must not have public files");
+ for(const retained of ["ROADMAP.md","scripts/check-research.mjs","research/README.md","research/library.json","research/PAPER_LIBRARY.md","research/program.json"])await access(new URL(retained,root));
+ assert.doesNotMatch(readme,/\]\((?:\.\/)?(?:research\/|ROADMAP\.md)/i);
  assert.match(readme,/not a novel checkpoint method or an LLM result/);
 });
 test("experiment chart snapshot preserves the strong-baseline null and class",()=>{
@@ -53,11 +52,11 @@ test("selected timeline excludes unattended offers and preserves date precision"
  for(const excluded of ["IIT Kharagpur","IIIT Delhi","Deloitte","ACM iSOFT"])assert.ok(!experiences.some(e=>e.where.includes(excluded)));
  assert.match(experiences.find(e=>e.where.includes("Philips")).role,/Apprentice/);
 });
-test("manual generation workflow stays on codex branches and ordinary CI stays read-only",async()=>{
+test("manual generation workflow stays on personal feature branches and ordinary CI stays read-only",async()=>{
  const refresh=await read(".github/workflows/refresh.yml"),ci=await read(".github/workflows/profile.yml");
  assert.match(refresh,/workflow_dispatch:/);
  assert.doesNotMatch(refresh,/pull_request_target:|schedule:|secrets\./);
- assert.match(refresh,/codex\/\*\)/);
+ assert.match(refresh,/sourodeep\/\*\|codex\/\*\)/);
  assert.match(refresh,/SOURCE_REF_TYPE: \$\{\{ github\.ref_type \}\}/);
  assert.match(refresh,/if \[ "\$SOURCE_REF_TYPE" != "branch" \]/);
  assert.match(refresh,/git push origin "HEAD:\$SOURCE_BRANCH"/);

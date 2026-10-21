@@ -15,8 +15,8 @@ jobs:
         run: |
           if [ "$SOURCE_REF_TYPE" != "branch" ]; then echo "Select a feature branch, not a tag."; exit 1; fi
           case "$SOURCE_BRANCH" in
-            codex/*) ;;
-            *) echo "Select a codex/ feature branch. This workflow never writes main/master."; exit 1 ;;
+            sourodeep/*|codex/*) ;;
+            *) echo "Select a sourodeep/ feature branch (or an existing codex/ branch). This workflow never writes main/master."; exit 1 ;;
           esac
       - uses: actions/checkout@v5
         with:
